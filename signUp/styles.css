@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #9588e2;
+}
+
+#main-container {
+    width: 90%;
+    max-width: 450px;
+    margin: 20vh auto;
+    padding: 30px;
+    border: 2px solid #9588e2;
+    border-radius: 20px;
+    box-shadow: 10px 20px 40px #121212;
+    background-color: lavenderblush;
+}
+
+.signUp, .signIn {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 30px;
+    transition:0.5s ease;
+
+    .button{
+        margin:0 auto;
+    }
+}
+
+.signUp input[type="text"],
+.signUp input[type="email"],
+.signUp input[type="password"],
+.signIn input[type="text"],
+.signIn input[type="email"],
+.signIn input[type="password"] {
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 20px;
+    border:none;
+}
+
+
+.btn-up,.btn-in {
+    padding: 10px;
+    width: 150px;
+    margin: 0 auto;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bolder;
+    border-radius: 10px;
+    border: none;
+    background-color: #9588e2;
+}
+
+
+.togle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+
+
+.signIn, .signUp {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    display: none;
+}
+
+.signUp.show, .signIn.show {
+    display: flex;  /*this is mandatory,dont put block here*/
+    opacity: 1;
+}
+
+.signin, .signup {
+    transition: 0.5s ease;
+}
+
