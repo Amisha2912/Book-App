@@ -93,3 +93,7 @@ const filterByList =(listName)=>{
     renderData(categoryBook);
 
 }
+
+
+//add filter ..1.listname as heading
+//add anchor tag value relate it with listname and show filterd book accordingly
