@@ -9,7 +9,17 @@
     /* max-height:100vh; 
 } */
 
+.body-blur .content-wrapper{
+    filter: blur(3px);
+    transition: filter 0.3s ease;
+    z-index: 1000;
+}
 .addDarkMode{
+    background-color: #121212;
+    color:#fff;
+}
+
+.addDarkMode .lists{
     background-color: #121212;
     color:#fff;
 }
@@ -30,6 +40,7 @@
     background-color: #121212;
     transform: translateX(24px);
     transition: 0.2s ease;
+    color:white;
 }
 
 
@@ -58,6 +69,8 @@
     }
 }
 
+
+
 .right-bar{
     display: flex;
     gap:20px;
@@ -75,6 +88,7 @@
 
 .active{
     background-color: #0010;
+    color:white;
 }
 
 .hero-section{
@@ -147,5 +161,27 @@
 
     h4{
         color:lightgray;
+    }
+
+}
+
+.pop-up{
+    width:80%;
+    max-width: 450px;
+    border: 2px solid red;
+    border-radius:20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1001;
+    position:fixed;
+    top:40vh;
+    left:30vw;
+    padding:30px;
+
+    img{
+        width:200px;
+        height:250px;
     }
 }
